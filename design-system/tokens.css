@@ -1,0 +1,140 @@
+/* Madison design system tokens, light theme. Built from tokens.json. */
+:root {
+  --bg: #e7ecee;
+  --sheet: #ffffff;
+  --sheet-2: #f4f7f8;
+  --flat: rgba(255, 255, 255, 0.5);
+  --track: #dde4e8;
+  --ink: #0e1c29;
+  --ink-2: #445362;
+  --ink-3: #62707d;
+  --line: #d5dde2;
+  --line-2: #e6ecef;
+  --grid: #d2dae0;
+  --mark: #9aa8b3;
+  --hover: rgba(14, 28, 41, 0.025);
+  --hover-row: rgba(14, 28, 41, 0.045);
+  --halo: rgba(14, 28, 41, 0.08);
+  --scrim: rgba(14, 28, 41, 0.14);
+  --you: #0b6e69;
+  --you-soft: #e1f0ee;
+  --on-you: #ffffff;
+  --pulse: rgba(11, 110, 105, 0.35);
+  --stop: #c23f2c;
+  --stop-soft: #f8e1dc;
+  --stop-deep: #edb9ae;
+  --risk: #9c620c;
+  --risk-soft: #fbefd9;
+  --risk-deep: #f1d29c;
+  --work: #1b5fa3;
+  --work-soft: #e2ecf7;
+  --work-deep: #b9cfea;
+  --wait: #4f6477;
+  --wait-soft: #e8eef3;
+  --wait-deep: #c5d2dd;
+  --ok: #2f7a4b;
+  --ok-soft: #e3f1e8;
+  --ok-deep: #bcdcc7;
+  --level-high: #b4472c;
+  --level-high-soft: #fbe7e1;
+  --sel: #cbd6dd;
+  --done: var(--ink-2);
+  /* spacing */
+  --space-rail: 220px;
+  --space-page-top: 18px;
+  --space-page-left: 10px;
+  --space-page-right: 52px;
+  --space-page-bottom: 96px;
+  --space-panel-gap: 14px;
+  --space-panel-y: 16px;
+  --space-panel-x: 20px;
+  --space-card: 20px;
+  --space-grid: 16px;
+  --space-columns: 24px;
+  --space-cell-x: 12px;
+  --space-cell-y: 10px;
+  --space-row-y: 16px;
+  --space-chip-x: 11px;
+  --space-button-x: 20px;
+  --size-chip: 28px;
+  --size-button: 38px;
+  --size-button-card: 36px;
+  --size-button-small: 30px;
+  --size-row-home: 58px;
+  --size-calendar-row: 58px;
+  --size-step-dot: 22px;
+  --size-step-current: 32px;
+  --size-drawer: 330px;
+  --size-ask: 560px;
+  --size-ask-open: 760px;
+  /* radius */
+  --radius-sheet: 20px;
+  --radius-drawer: 22px;
+  --radius-ask: 26px;
+  --radius-inner: 16px;
+  --radius-card: 14px;
+  --radius-input: 12px;
+  --radius-tag: 12px;
+  --radius-row: 10px;
+  --radius-toggle: 8px;
+  --radius-pill: 999px;
+  /* shadow */
+  --shadow-lift: 0 1px 2px rgba(14, 28, 41, 0.06), 0 18px 40px -16px rgba(14, 28, 41, 0.30);
+  --shadow-glow: 0 10px 22px -10px rgba(11, 110, 105, 0.65);
+  --shadow-drawer: 0 30px 80px -20px rgba(14, 28, 41, 0.45);
+  --shadow-stop: inset 0 0 0 1.5px #c23f2c, 0 18px 40px -16px rgba(14, 28, 41, 0.30);
+  --shadow-ring: inset 0 0 0 1px #d5dde2;
+  --shadow-selected: 0 1px 2px rgba(14, 28, 41, 0.14), inset 0 0 0 1px #d5dde2;
+  --shadow-chip-selected: 0 1px 2px rgba(14, 28, 41, 0.14), inset 0 0 0 1.5px #445362;
+  --shadow-hover: 0 6px 16px -8px rgba(14, 28, 41, 0.35);
+  --shadow-peek: 0 14px 34px -12px rgba(14, 28, 41, 0.32), inset 0 0 0 1px #d5dde2;
+  --shadow-ask: 0 1px 2px rgba(14, 28, 41, 0.06), 0 16px 36px -14px rgba(14, 28, 41, 0.28), inset 0 0 0 1px #e6ecef;
+  --shadow-ask-open: 0 1px 2px rgba(14, 28, 41, 0.06), 0 30px 70px -24px rgba(14, 28, 41, 0.42), inset 0 0 0 1px #e6ecef;
+  /* duration */
+  --duration-hover: 160ms;
+  --duration-press: 180ms;
+  --duration-lift: 240ms;
+  --duration-appear: 280ms;
+  --duration-drawer: 320ms;
+  --duration-ask: 340ms;
+  --duration-spin: 4s;
+  --duration-ring: 9s;
+  --duration-pulse: 2.4s;
+  --duration-flow: 1.6s;
+  /* easing */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-drawer: cubic-bezier(0.19, 1, 0.22, 1);
+  /* zIndex */
+  --z-ask: 5;
+  --z-scrim: 6;
+  --z-drawer: 7;
+  --z-drawer-open: 9;
+  --z-peek: 12;
+  --font-sans: 'Onest', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'Azeret Mono', ui-monospace, Menlo, monospace;
+}
+
+/* Type styles */
+.t-wordmark { font-family: var(--font-sans); font-size: 21px; font-weight: 800; letter-spacing: -0.03em }
+.t-page-title { font-family: var(--font-sans); font-size: 24px; font-weight: 700; letter-spacing: -0.025em }
+.t-task-title { font-family: var(--font-sans); font-size: 22px; font-weight: 800; letter-spacing: -0.02em }
+.t-figure { font-family: var(--font-sans); font-size: 32px; font-weight: 800; line-height: 1; letter-spacing: -0.04em }
+.t-card-title { font-family: var(--font-sans); font-size: 17px; font-weight: 700; letter-spacing: -0.01em }
+.t-section-title { font-family: var(--font-sans); font-size: 15px; font-weight: 700 }
+.t-lead { font-family: var(--font-sans); font-size: 14px; font-weight: 400 }
+.t-body { font-family: var(--font-sans); font-size: 13px; font-weight: 400; line-height: 1.35 }
+.t-body-strong { font-family: var(--font-sans); font-size: 13px; font-weight: 600; line-height: 1.35 }
+.t-message { font-family: var(--font-sans); font-size: 13px; font-weight: 400; line-height: 1.5 }
+.t-nav-item { font-family: var(--font-sans); font-size: 14px; font-weight: 500 }
+.t-nav-item-quiet { font-family: var(--font-sans); font-size: 13px; font-weight: 500 }
+.t-meta { font-family: var(--font-sans); font-size: 12px; font-weight: 400 }
+.t-caption { font-family: var(--font-sans); font-size: 11px; font-weight: 400 }
+.t-overline { font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase }
+.t-column-head { font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase }
+.t-button { font-family: var(--font-sans); font-size: 14px; font-weight: 700 }
+.t-button-small { font-family: var(--font-sans); font-size: 13px; font-weight: 600 }
+.t-chip { font-family: var(--font-sans); font-size: 12px; font-weight: 600 }
+.t-tag { font-family: var(--font-sans); font-size: 12px; font-weight: 700 }
+.t-id { font-family: var(--font-mono); font-size: 12px; font-weight: 400 }
+.t-id-small { font-family: var(--font-mono); font-size: 11px; font-weight: 400 }
+.t-count { font-family: var(--font-mono); font-size: 11px; font-weight: 600 }

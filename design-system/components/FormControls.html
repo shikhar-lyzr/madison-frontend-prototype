@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="/design-system/tokens.css"><link rel="stylesheet" href="/design-system/bundle.css"><meta charset="utf-8"><title>FormControls</title></head>
+<body style="margin:0;background:var(--bg)">
+<div class="md-page">
+<div class="md-stack" style="gap:14px">
+  <div class="md-board" style="grid-template-columns:repeat(3,minmax(0,1fr));column-gap:10px">
+    <label class="md-opt"><input class="md-radio" type="radio" name="d" checked><span><b>Amend as asked</b><small>The plan becomes version 2, signed by you.</small></span></label>
+    <label class="md-opt"><input class="md-radio" type="radio" name="d"><span><b>Amend differently</b><small>You set another date.</small></span></label>
+    <label class="md-opt"><input class="md-radio" type="radio" name="d"><span><b>Decline</b><small>Nothing changes on the plan.</small></span></label>
+  </div>
+  <div class="md-board" style="grid-template-columns:2fr 1fr;column-gap:14px">
+    <label class="md-field">Reason<textarea class="md-textarea" rows="2" placeholder="Your words"></textarea></label>
+    <div class="md-stack" style="gap:10px"><label class="md-field">Severity<select class="md-select"><option>Choose a severity</option></select></label>
+      <div class="md-row" style="gap:6px"><span class="md-toggle" role="checkbox" aria-checked="true">1</span><span class="md-toggle" role="checkbox" aria-checked="false">2</span><span class="md-toggle" role="checkbox" aria-checked="true">3</span><span class="md-toggle" role="checkbox" aria-checked="false">4</span><span class="md-toggle" role="checkbox" aria-checked="false">5</span></div></div>
+  </div>
+  <div class="md-drop">Drop the file here, or choose one<small>A spreadsheet or a CSV</small></div>
+</div>
+</div>
+</body>
+</html>
