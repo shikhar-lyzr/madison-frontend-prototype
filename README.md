@@ -26,6 +26,7 @@ Opening the files directly from disk will not resolve those links.
 | `prototype/reg-change/` | Regulatory change screens |
 | `prototype/tprm/` | Third parties screens |
 | `prototype/screens.html` | Every screen, by section, with its wireframe id (B01, B22 and so on) |
+| `prototype/control-testing.html` | Control testing end to end: every control testing screen in the order the story runs, numbered |
 | `prototype/ask.js` | The Ask Madison panel (a mock, see below) |
 | `design-system/tokens.css` | Every token as a CSS variable: colours, type, spacing, radius, shadow, motion, z-index |
 | `design-system/tokens.json` | The same tokens as data, each with what it is for |
@@ -46,8 +47,10 @@ All of it is in the small script at the end of each page, and in `prototype/ask.
 
 - **Drawers**: `[data-drawer]` with a `[data-tab]` toggle. One open at a time, Escape or the scrim closes it.
 - **Rows that open a record**: `tr[data-go]` and calendar rows. A click anywhere on the row follows its link, unless the click was on a control.
-- **Buttons that wait for choices**: `button[data-need]` stays disabled until every radio group, the required words or the required fields are filled, then turns teal and goes to `data-next`.
+- **Buttons that wait for choices**: `button[data-need]` stays disabled until every radio group, the required words or the required fields are filled, then turns teal and goes to `data-next`. A choice can carry its own `data-next` and `data-label`: picking it renames the button and sends it there (Hold, Decline, Change the set, Insufficient).
 - **Steps**: a finished station opens its view-only record. With none, it opens the Activity drawer (`[data-open-drawer]`).
+- **Roles (RBAC)**: the person at the foot of the rail (`[data-role-menu]`) opens the bank's roles. Each opens that role's Home, and each rail shows only the sections that role sees: the testing analyst Regulatory change and Assurance, the Head of Compliance Assurance and the compliance officer all three, the third-party risk manager Third parties, the control owner and internal audit Regulatory change (audit read only), the platform administrator Platform.
+- **Journey**: Back and Next beside All screens walk the control testing screens in `control-testing.html`'s order.
 - **Actions board**: To do and Worth a look side by side. Seen strikes an item through, drops it to the foot of its column and lowers the count.
 - **Ask Madison**: docked at the bottom of every page, opened by a click or the `/` key. The answers are a mock that only quotes what the page shows. A real agent replaces one function, `answer(question)`, which resolves to `{ text, items }`: a sentence and the page items it cites. It is exposed as `window.MadisonAsk.answer`.
 
